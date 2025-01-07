@@ -1,70 +1,94 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Recipe Manager App
 
-In the project directory, you can run:
+This project is a simple Recipe Manager App built using React. The app allows users to create, view, edit, delete, and organize recipes. A JSON-Server is used to manage the backend data.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Repoisotry Link
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://github.com/teymuraliyev1/web-and-mobile-reciepes.git
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Home Page**: Displays a featured recipe and an introduction to the app.
+- **Recipe Management**: Add, view, edit, delete, and organize recipes with features like sorting, filtering, and searching.
+- **Contact Page**: Submit messages via a simple contact form.
+- **Backend Integration**: Uses `json-server` to store and manage recipes and messages.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ensure you have the following installed on your machine:
 
-### `npm run eject`
+- [Node.js](https://nodejs.org/)
+- npm (comes with Node.js)
+- [JSON-Server](https://github.com/typicode/json-server)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-link>
+   cd recipe-app-manager
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Running the Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Start the React App
 
-### Code Splitting
+To start the React app, run the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run start
+```
 
-### Analyzing the Bundle Size
+This will start the development server. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+### Start the JSON-Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To start the `json-server` and serve the recipe data, run:
 
-### Advanced Configuration
+```bash
+npm run server
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This will start the server at [http://localhost:3001](http://localhost:3001).
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Using the Application
 
-### `npm run build` fails to minify
+1. **Home Page**: Explore the featured recipe and learn more about the app.
+2. **Recipe Management**: Navigate to the "Recipes" page to create, view, edit, delete, and filter recipes.
+3. **Contact**: Use the contact form to send messages to the backend.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Project Structure
+
+```
+src
+├── components           # Reusable components
+├── constants            # Static values
+├── contact              # Contact page
+├── home                 # Home page
+├── hooks                # Custom hooks
+└── recipe               # Recipe-related pages and components
+```
+
